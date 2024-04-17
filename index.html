@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Magno</title> <!--nome da pagina que fica na aba do navegador-->
+</head>
+
+<body>
+
+    <header> <!--cabeçalho da pagina-->
+
+        <nav>
+            <ul> <!--liks-->
+                <li><a href="#sobre">Sobre Mim</a></li> <!--href manda para a coordenada exata do conteudo clicado-->
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="apresentação">
+
+            <h1>Olá, Seja bem vindo<br> meu nome é Magno!</h1> <!--me apresentando-->
+
+            <img src="" alt="imagem do Magno">
+        </section>
+
+        <section id="sobre">
+
+            <h2>Sobre Mim</h2>
+
+            <p>Conte um pouco sobre você, suas habilidades, experiências e objetivos profissionais.</p>
+        </section>
+
+        <section id="formacao">
+
+            <h2>Formação</h2>
+
+            <ul>
+                <li><strong>2023 - 2024:</strong> Descrição do curso, instituição</li>
+                <li><strong>2020 - 2022:</strong> Descrição do curso, instituição</li>
+                </ul>
+        </section>
+
+        <section id="portfolio">
+
+            <h2>Portfólio</h2>
+
+            <div class="projetos">
+                <div class="projeto">
+                    <h3>Nome do projeto</h3>
+                    <img src="imagem-projeto.jpg" alt="Descrição do projeto">
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#">Link para o projeto</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="contato">
+
+            <h2>Contato</h2>
+
+            <p>Descreva como as pessoas podem entrar em contato com você.</p>
+
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2024 Portfólio Magno</p>
+    </footer>
+</body>
+</html>
