@@ -1,0 +1,88 @@
+/* CSS only Slideshow*/
+* {
+  padding: 0;
+  margin:0;
+}
+
+main {
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slideshow {
+    position: absolute;
+    overflow: hidden;
+    width: 60vw;
+    height: 55vh;
+    border-radius: 20px;
+    box-shadow: 0em 0em 3em 0.5em rgb(114, 114, 114);
+  }
+  
+  .slide2 {
+    display: flex;
+    justify-content: center;
+    width: 300vw;
+    -webkit-animation: slide 18s ease infinite;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    float: left;
+    height: 55vh;
+    width: 100vw;
+    align-items: center;
+  }
+  
+  .slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+  }
+  
+  @-webkit-keyframes slide {
+    10% {margin-left: 0px;}
+    30% {margin-left: -100%;}
+    60% {margin-left: -200%;}
+    90% {margin-left: -300%;}
+  }
+
+  /*fim de slidershow*/
+
+  header {
+    display: flex;
+    margin: 3%;
+  }
+
+  .traço {
+    border: 1px solid #000;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .cabeçalho-texto {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .texto1, .texto2, .texto3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: gotham black;
+    font-size: 100%;
+    color: black;
+    margin-right: 10%;
+  }
+
+  .apresentação-texto {
+    display: flex;
+    margin-top: 30%;
+    color: #000000;
+    font-size: 130%;
+    text-align: center;
+    font-family: gotham black;
+  }
