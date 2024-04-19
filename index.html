@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,33 @@
 
     <header> <!--cabeçalho da pagina-->
 
-        <h1 id="nome_header">Portfólio</h3>
+        <h3 id="nome_header">Portfólio</h3>
 
-        <nav>
-            <ul> <!--liks-->
-                <li><a href="#sobre">Sobre Mim</a></li> <!--href manda para a coordenada exata do conteudo clicado-->
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="menu-hamburger">
+
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="menu-hamburguer-elements show">
+                <li>
+                    <a href="#sobre">Sobre Mim</a> <!--href manda para a coordenada exata do conteudo clicado-->
+                </li>
+
+                <li>
+                    <a href="#formacao">Formação</a>
+                </li>
+
+                <li>
+                    <a href="#portifolio">Portfólio</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -33,12 +52,12 @@
 
         </section>
 
-        <section id="sobre">
+        <section id="sobre"><!--titulo do assunto-->
 
             <h2>Sobre Mim</h2>
 
             <p>Me chamo Cledilson Magno profissional de análise de sistemas, pai de uma filha linda e esposo de uma mulher maravilhosa residindo num condomínio tranquilo.<br>
-                Gosto muito de esportes e muito de Tecnologia!</p>
+                Gosto muito de esportes e muito de Tecnologia!</p> <!--assunto-->
         </section>
 
         <section id="formacao">
@@ -82,7 +101,7 @@
             <p><strong>Whatsapp:</strong> 82 9 99697-4661</p>
             <p><strong>E-mail:</strong> magnosea.07@gmail.com</p>
 
-            <form action="#">
+            <form action="" method="post"> <!--method passa a info no head sem ficar visivel em nada, o action serve para definir o destino que o form vai ser enviado-->
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
